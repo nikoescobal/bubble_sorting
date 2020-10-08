@@ -1,11 +1,17 @@
-def bubble-sort (arr1)
-  arr1.each do |i|
-    x = i + 1
-    loop do
-      if arr1[x] < arr[i]
-        arr1[x], arr[i] = arr[i], arr1[x] 
+def bubblesort(arr)
+  i=0
+  while i< arr.length()
+    x = i+1
+    while x< (arr.length())
+      if arr[x] < arr[i]
+        arr[x], arr[i] = arr[i], arr[x] 
       end
-      break if x > arr1.length - 1
+      x+=1
     end 
-  end
-  puts #{arr1)}
+    i+=1
+  end 
+  return arr
+end
+  y = bubblesort([1,7,5,3])
+  puts y
+  
