@@ -5,7 +5,7 @@ def bubble_sort(arr)
   i = 0
   while i < arr.length
     x = i + 1
-    while x < (arr.length)
+    while x < arr.length
       arr[x], arr[i] = arr[i], arr[x] if arr[x] < arr[i]
       x += 1
     end
@@ -25,7 +25,7 @@ y = bubble_sort_by([1, 7, 5, 3]) do |arr|
   i = 0
   while i < arr.length
     x = i + 1
-    while x < (arr.length)
+    while x < arr.length
       arr[x], arr[i] = arr[i], arr[x] if arr[x] < arr[i]
       x += 1
     end
