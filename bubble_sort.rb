@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # bubble_sort
 def bubble_sort(arr)
   i = 0
